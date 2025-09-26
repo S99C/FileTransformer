@@ -1,0 +1,41 @@
+2025-09-27 00:49:32 - INFO - Logging initiated. All output directed to console and file: logs\file_transform_20250927_004932.log
+2025-09-27 00:49:32 - INFO - --------------------------------------------------
+2025-09-27 00:49:32 - INFO - 
+==================================================
+2025-09-27 00:49:32 - INFO - Starting automatic scan for Excel files in: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform
+2025-09-27 00:49:32 - INFO - Files containing 'Enrollment' or 'Usage' will be processed.
+2025-09-27 00:49:32 - INFO - ==================================================
+2025-09-27 00:49:32 - INFO - 
+--- Processing File: 2025.11 Enrollment File Part 1.5.xlsx ---
+2025-09-27 00:49:32 - INFO - File Type Detected: Enrollment
+2025-09-27 00:49:32 - INFO - Successfully read file: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\2025.11 Enrollment File Part 1.5.xlsx
+2025-09-27 00:49:32 - INFO - Applying Enrollment-specific transformations...
+2025-09-27 00:49:32 - INFO - Encapsulating text in double quotes for columns: CUSTOMER_NAME, CUSTOMER_SERVICE_ADDRESS, CUSTOMER_SERVICE_CITY_STATE_ZIP, TX_TAR_SHORT_DESC, TX_TAR_SCH_DESC
+2025-09-27 00:49:32 - INFO - Applying custom encapsulation ('"\'{value}\'"') to column: TX_SERV_SUPP
+2025-09-27 00:49:32 - INFO - Formatting dates to YYYY-MM-DD for columns: DT_EFF, CUST_ENR_START_DATE, CUST_EDI_DROP_DATE, LAST_UPDATE
+2025-09-27 00:49:32 - INFO - Applying zero-padding for columns: {'CITY_GATE': 4, 'KY_MTR_BILL_GRP': 2, 'CD_SERV_SUPP': 4}
+2025-09-27 00:49:32 - INFO - Removing commas from columns: TOT_ANNUAL_USAGE, CUST_PEAK_DAY, CUST_BASE_LOAD, CUST_THERMAL_RESPONSE
+2025-09-27 00:49:32 - INFO - Excel transformation complete! Data saved to intermediate CSV: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\2025.11 Enrollment File Part 1.5_intermediate.csv
+2025-09-27 00:49:32 - INFO - Starting quote cleanup on intermediate file: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\2025.11 Enrollment File Part 1.5_intermediate.csv
+2025-09-27 00:49:32 - INFO - Final find-and-replace process complete! Data saved to final CSV: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\2025.11 Enrollment File Part 1.5_final.csv
+2025-09-27 00:49:32 - INFO - Starting cleanup of intermediate file...
+2025-09-27 00:49:32 - INFO - Intermediate file 'c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\2025.11 Enrollment File Part 1.5_intermediate.csv' removed successfully.
+2025-09-27 00:49:32 - INFO - 
+--- Processing File: z_usage_1.xlsx ---
+2025-09-27 00:49:32 - INFO - File Type Detected: Usage
+2025-09-27 00:49:32 - INFO - Successfully read file: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\z_usage_1.xlsx
+2025-09-27 00:49:32 - INFO - Applying Usage-specific transformations...
+2025-09-27 00:49:32 - INFO - Encapsulating text in double quotes for columns: CUST_NAME, CUST_SERV_ADDR, CUST_SERV_CITY_ST_ZIP, CUST_POOL_ID
+2025-09-27 00:49:32 - INFO - Formatting dates to YYYY-MM-DD for columns: DT_LST_BLLD, DT_RDG_FROM, DT_RDG_TO, DT_ENTERED
+2025-09-27 00:49:32 - INFO - Applying zero-padding for various columns...
+2025-09-27 00:49:32 - INFO - Removing commas from columns: USAGE, QY_BTU_FACTOR
+2025-09-27 00:49:32 - INFO - Excel transformation complete! Data saved to intermediate CSV: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\z_usage_1_intermediate.csv
+2025-09-27 00:49:32 - INFO - Starting quote cleanup on intermediate file: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\z_usage_1_intermediate.csv
+2025-09-27 00:49:32 - INFO - Final find-and-replace process complete! Data saved to final CSV: c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\z_usage_1_final.csv
+2025-09-27 00:49:32 - INFO - Starting cleanup of intermediate file...
+2025-09-27 00:49:32 - INFO - Intermediate file 'c:\Users\SaptarshiChakraborty\Documents\TestFileEdit\FileTransform\z_usage_1_intermediate.csv' removed successfully.
+2025-09-27 00:49:32 - INFO - 
+==================================================
+2025-09-27 00:49:32 - INFO - Automatic folder scan finished. 2 files processed.
+2025-09-27 00:49:32 - INFO - ==================================================
+
