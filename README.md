@@ -7,3 +7,7 @@ This python script reads an excel sheet and applies a set of transformations bas
 3. Put the 'Enrollment/Usage' files inside the folder that needs to modified and run the executable.
 4. The output CSV file would would be saved inside the same 'FileTransform' folder.
 5. When the executable is run, it should also create a 'Logs' folder in the same parent directory and generate new log files in it each time the executable is run.
+
+Libraries Used:
+Pandas
+OpenPyXL
